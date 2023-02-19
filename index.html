@@ -58,9 +58,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/webxr.loader.js";
       var config = {
-        dataUrl: buildUrl + "/webxr.data.gz",
-        frameworkUrl: buildUrl + "/webxr.framework.js.gz",
-        codeUrl: buildUrl + "/webxr.wasm.gz",
+        dataUrl: buildUrl + "/webxr.data.unityweb",
+        frameworkUrl: buildUrl + "/webxr.framework.js.unityweb",
+        codeUrl: buildUrl + "/webxr.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "DIMA",
@@ -89,7 +89,7 @@
         // performance, uncomment the following line:
         // config.devicePixelRatio = 1;
 
-        
+        unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
